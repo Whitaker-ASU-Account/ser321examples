@@ -7,12 +7,9 @@ class WebServer {
 
     // 
     public static void main(String args[]) {
-        if (args.length != 1) {
-            System.out.println("Usage: WebServer <port>");
-            System.exit(1);
-        }
+
         
-        WebServer server = new WebServer(Integer.parseInt(args[0]));
+        WebServer server = new WebServer(9000);
     }
 
     public WebServer(int port) {
